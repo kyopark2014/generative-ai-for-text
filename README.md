@@ -1,2 +1,2 @@
-# generative-ai-for-text
-It shows the generative AI for Text.
+# Text를 위한 Generative AI
+
