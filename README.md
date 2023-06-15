@@ -16,6 +16,13 @@ git clone https://github.com/sunbc0120/sagemaker-jumpstart-generative-ai-example
 
 "08-RAG-based-question-answering/01-question_answerIng_jumpstart_knn.ipynb"을 수행하여 [01-question_answering_jumpstart_ai21-apigateway.ipynb](https://github.com/kyopark2014/generative-ai-for-text/blob/main/notebook/01-question_answering_jumpstart_ai21-apigateway.ipynb)과 같은 결과를 얻었습니다.
 
+## LangChain 
+
+[LangChain](https://python.langchain.com/en/latest/index.html)은 언어 모델기반의 어플리케이션을 개발하기 위한 Framework입니다.
+
+"08-RAG-based-question-answering/02-question_answering_langchain_jumpstart.ipynb"을 참조하여 [02-question_answering_langchain_jumpstart.ipynb](https://github.com/sunbc0120/sagemaker-jumpstart-generative-ai-examples/blob/main/08-RAG-based-question-answering/02-question_answering_langchain_jumpstart.ipynb)와 같이 실행하였습니다.
+
+
 ## Reference 
 
 [sagemaker-jumpstart-generative-ai-examples](https://github.com/sunbc0120/sagemaker-jumpstart-generative-ai-examples)
