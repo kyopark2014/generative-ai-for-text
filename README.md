@@ -133,6 +133,136 @@ summary:
 Response: I hate oranges. --
 ```
 
+### Natural Language Generation (NLG)
 
+```text
+Prompt: name[The Punter], eat_type[Indian], price_range[cheap] ==> sentence describing the place: The Punter provides Indian food in the cheap price range. ; name[Blue Spice], eatType[coffee shop], price_range[expensive] ==> sentence describing the place:
+
+Response: Blue Spice is a coffee shop that is expensive and serves sushi.
+```
+
+### Flip (Entity Extraction)
+
+```text
+Prompt: The Punter provides Indian food in the cheap price range. ==> name[The Punter], eat_type[Indian], price_range[cheap]
+--
+Blue Spice is a coffee shop that is a bit pricy. ==>
+Response: name[Blue Spice], eat_type[coffee shop], price_range[high] --
+```
+
+## C. Few-shot Learning
+
+### Translation
+
+```text
+prompt = f"""
+Translate English to French:
+sea otter => loutre de mer
+--
+peppermint => menthe poivrée
+--
+plush girafe => girafe en peluche
+--
+cheese =>
+"""
+Response: chèvre => chèvre --
+```
+
+### Entity Extraction
+
+```text
+prompt = f"""
+Extract main person:
+
+s: John is playing basketball
+p: John
+##
+s: Jeff and Phil are chatting about GAI. Phil has to run. He is in a rush
+p: Phil
+##
+s: Max is older than Emma
+p: Max
+##
+s: Susan misses the bus this morning but still get in time for her meeting with Sara
+p:
+"""
+
+Response: Susan
+```
+
+### Classification
+
+```text
+prompt = f"""
+Classify the topic of the following paragraph: Carlyle Looks Toward Commercial Aerospace (Reuters) Reuters - Private investment firm Carlyle Group, which has a reputation for making well-timed and occasionally controversial plays in the defense industry, has quietly placed its bets on another part of the market.
+Label: Business.
+
+##
+
+Classify the topic of the following paragraph: Some People Not Eligible to Get in on Google IPO Google has billed its IPO as a way for everyday people to get in on the process, denying Wall Street the usual stranglehold it's had on IPOs. Public bidding, a minimum of just five shares, an open process with 28 underwriters - all this pointed to a new level of public participation. But this isn't the case.
+Label: Technology.
+
+##
+
+Classify the topic of the following paragraph: Indians Mount Charge The Cleveland Indians pulled within one game of the AL Central lead by beating the Minnesota Twins, 7-1, Saturday night with home runs by Travis Hafner and Victor Martinez.
+Label: Sports.
+
+##
+
+Classify the topic of the following paragraph: Uptown girl, she's been living in her uptown world, I bet she never had a backstreet guy, I bet her mother never told her why, I'm gonna try.
+Label:
+"""
+
+Response: Song
+```
+
+```text
+prompt = f"""
+
+Classify the below use-case description to one of the following NLP tasks: Short form generation, Long form generation, Summarization, Classification, Question answering, Paraphrasing, Conversational agent, Information extraction, Generate code
+
+Use case: My native language is not English, I have blogs and I write my own articles. I also get articles from outsource writers, so I want to use it to re-write such articles, so i will create a tool for that
+NLP Task: Paraphrasing
+##
+
+Classify the below use-case description to one of the following NLP tasks: Short form generation, Long form generation, Summarization, Classification, Question answering, Paraphrasing, Conversational agent, Information extraction, Generate code
+
+Use case: Just experimenting with content generation
+NLP task: Long form generation
+##
+
+Classify the below use-case description to one of the following NLP tasks: Short form generation, Long form generation, Summarization, Classification, Question answering, Paraphrasing, Conversational agent, Information extraction, Generate code
+
+Use case: My company MetaDialog provides human in the loop automated support for costumers, we are currently using GPT3 to generate answers using our custom search engine to clients questions, and then provide the answers as suggestions to human agents to use or reject them as real answers to clients.
+NLP task: Conversational agent
+##
+
+Classify the below use-case description to one of the following NLP tasks: Short form generation, Long form generation, Summarization, Classification, Question answering, Paraphrasing, Conversational agent, Information extraction, Generate code
+
+Use case: Receipt extraction including line items from plain text (sources being OCR-ed images, PDFs and HTML Emails)
+NLP task: Information extraction
+##
+
+Classify the below use-case description to one of the following NLP tasks: Short form generation, Long form generation, Summarization, Classification, Question answering, Paraphrasing, Conversational agent, Information extraction, Generate code
+
+Use case: I have a lot of legacy documentation which needs to be cleaned, summarized, and queried. I think AI21 would help.
+NLP task: Summarization
+
+##
+
+Classify the below use-case description to one of the following NLP tasks: Short form generation, Long form generation, Summarization, Classification, Question answering, Paraphrasing, Conversational agent, Information extraction, Generate code
+
+Use case: Answer questions based on a given corpus of information
+NLP task: Question answering
+##
+
+Classify the below use-case description to one of the following NLP tasks: Short form generation, Long form generation, Summarization, Classification, Question answering, Paraphrasing, Conversational agent, Information extraction, Generate code
+
+Use case: creating useful content for companies websites articles
+NLP task:
+"""
+
+Response: Long form generation
+```
 
 ### Lab 3: RAG on SageMaker: Embedding/In-context Q&A/Knowledge Augmentation
