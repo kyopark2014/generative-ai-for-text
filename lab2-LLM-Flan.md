@@ -1,4 +1,4 @@
-# FLAM-T5-xxl 모델 성능
+# Flan-T5-xxl 모델 성능
 
 [flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl)은 아래와 같습니다.
 
