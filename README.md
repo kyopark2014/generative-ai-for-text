@@ -33,6 +33,8 @@ git clone https://github.com/sunbc0120/sagemaker-jumpstart-generative-ai-example
 
 ## A Zero-shot Learning
 
+### Extract Q&A
+
 ```java
 context = """Once, a cunning fox saw a crow with a piece of cheese in its beak sitting on a branch. \
 The fox devised a plan and flattered the crow, causing the crow to caw with delight, dropping the \
