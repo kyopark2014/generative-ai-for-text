@@ -28,9 +28,11 @@ git clone https://github.com/sunbc0120/sagemaker-jumpstart-generative-ai-example
 
 LLM의 파라메터 숫자를 무작정 늘리는것은 메모리와 훈련시간의 한계가 있으므로, 적당한 크기의 LLM 모델에 Fine tuning을 하는것이 좋은 선택일 수 있습니다. Fine tuning은 모델의 Weight를 변경하므로써 좀 더 바람직한 결과를 얻을 수 있지만, 이것 또한 많은 비용이 필요합니다. In-context learning은 모델의 Weight를 변경하지 않으면서, 모델의 성능을 향상 시킬수 있는 방법입니다. 이것은 다음 단어를 예측할때 도움이 되는 Context를 제공하는 방법입니다.
 
+- Prior에 더 많은 정보가 추가되기 때문에 목적에 맞는 Posterior를 만들어주는것 (대열님)
+
 #### Zero-shat
 
-모델이 주어진 자연어 설명(natual language description)만을 이용하여 예측을 수행합니다. 즉, 예시없이 질문만하는 경우입니다. 
+모델이 주어진 자연어 설명(natual language description)만을 이용하여 예측을 수행합니다. 즉, 예시없이 질문만하는 경우입니다.
 
 ```text
 Task description: Translate English to French:
@@ -54,7 +56,7 @@ Prompt: cheese =>
 
 #### Few-shot
 
-여러개의 예시를 주고 예측을 수행합니다.
+여러개의 예시를 주고 예측을 수행합니다. Prior에 더 많은 정보가 추가되기 때문에 목적에 맞는 Posterior를 만들어줄 수 있습니다. (dy님)
 
 ```text
 Test description: Translate English to French:
@@ -76,8 +78,8 @@ Prompt: cheese =>
 사전 학습(Pretrained)된 LLM과 정보 검색을 결합해 더 정확하고 맥락에 맞는 답변을 도출합니다. 외부 지식에 직접 액세스하거나 외부 지식을 통합하여 좀 더 정확한 답변을 생성할 수 있습니다.
 
 - In-context learning처럼 모델의 weight를 변경하지 않습니다.
-- Knowledge DB에서 Prompt에 맞는 검색 결과에 대한 임베딩을 뽑아서 Prompt에 추가하여 넣어주는 방식입니다. 따라서 양질의 DB 구축이 중요합니다.
-
+- Knowledge DB에서 Prompt에 맞는 검색 결과에 대한 임베딩을 뽑아서 Prompt에 추가하여 넣어주는 방식입니다. 따라서 양질의 DB 구축이 중요합니다. (dk님)
+- RAG는 모델을 개선하는 것은 아니고, Prior를 더욱 좋게 만들어주는 것이라 보면 될 것 같습니다. 그렇기 때문에 좋은 맥락을 만들어주는 Retriever의 역할이 중요합니다. 더 좋은 결과를 내기 위해서는 후보맥락을 뽑아주는 Retriever를 잘 만드는 것이 중요하고 많은 연구가 이뤄지고 있습니다. 예를들어 LLM의 오류를 Retriever에 Loss값으로 전파해서 Retriever 네트워크만 추가학습하는 기법도 있습니다. (dy님)
 
 #### 프로세스 단계
 
