@@ -71,10 +71,18 @@ Prompt: cheese =>
 
 
 
-### RAG
+### RAG (Retrieval-Augmented Generation)
 
-사전 
-사전 훈련된 
+사전 학습(Pretrained)된 LLM과 정보 검색을 결합해 더 정확하고 맥락에 맞는 답변을 도출합니다. 외부 지식에 직접 액세스하거나 외부 지식을 통합하여 좀 더 정확한 답변을 생성할 수 있습니다.
+
+- In-context learning처럼 모델의 weight를 변경하지 않습니다.
+- Knowledge DB에서 Prompt에 맞는 검색 결과에 대한 임베딩을 뽑아서 Prompt에 추가하여 넣어주는 방식입니다. 따라서 양질의 DB 구축이 중요합니다.
+
+
+#### 프로세스 단계
+
+1) retriever를 사용하여 지식 베이스에서 유관 정보를 검색합니다.
+2) generator를 사용해 검색한 정보와 쿼리값을 기반으로 답변을 생성합니다. 
 
 
 hallucination을 막을 수 있음
@@ -108,3 +116,4 @@ LLM의 문장이 긴 경우에 Chunk단위로 요약해서 사용할때 편리�
 
 [LLM Instruction Tuning on SageMaker](https://github.com/aws-samples/aws-ml-jp/blob/main/tasks/generative-ai/text-to-text/fine-tuning/instruction-tuning/README_en.md)
 
+[Introducing the Hugging Face LLM Inference Container for Amazon SageMaker](https://huggingface.co/blog/sagemaker-huggingface-llm)
