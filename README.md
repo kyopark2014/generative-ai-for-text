@@ -107,7 +107,7 @@ hallucination을 막을 수 있음
 
 [LangChain](https://python.langchain.com/en/latest/index.html)은 언어 모델기반의 어플리케이션을 개발하기 위한 Framework입니다.
 
-LLM의 문장이 긴 경우에 Chunk단위로 요약해서 사용할때 편리함
+LLM의 문장이 긴 경우에 Chunk단위로 요약해서 사용할때 편리하고(추가 확인), Bedrock의 모델 API들이 LangChain과 연동되므로 편리하다고 합니다. (gs님)
 
 "08-RAG-based-question-answering/02-question_answering_langchain_jumpstart.ipynb"을 참조하여 [02-question_answering_langchain_jumpstart.ipynb](https://github.com/sunbc0120/sagemaker-jumpstart-generative-ai-examples/blob/main/08-RAG-based-question-answering/02-question_answering_langchain_jumpstart.ipynb)와 같이 실행하였습니다.
 
