@@ -41,6 +41,8 @@ Task description: Translate English to French:
 Prompt: cheese =>
 ```
 
+[00-prompt-enigeering-flan-t5-xxl.ipynb](https://github.com/kyopark2014/generative-ai-for-text/blob/main/notebook/00-prompt-enigeering-flan-t5-xxl.ipynb)에 아래와 같은 예제가 있습니다.
+
 ```text
 prompt: "Translate to German:  My name is Arthur"
 Response: Ich bin Arthur.
