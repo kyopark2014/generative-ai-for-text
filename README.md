@@ -83,7 +83,9 @@ Prompt: cheese =>
 
 [Build a powerful question answering bot with Amazon SageMaker, Amazon OpenSearch Service, Streamlit, and LangChai](https://aws.amazon.com/ko/blogs/machine-learning/build-a-powerful-question-answering-bot-with-amazon-sagemaker-amazon-opensearch-service-streamlit-and-langchain/?sc_channel=sm&sc_campaign=Machine_Learning&sc_publisher=LINKEDIN&sc_geo=GLOBAL&sc_outcome=awareness&trk=machine_learning&linkId=219734484)의 아래 그림을 참조합니다.
 
-<img src="https://github.com/kyopark2014/generative-ai-for-text/assets/52392004/72097003-364d-4e4e-9b27-4eafbab4e1ad" width="600">
+
+![image](https://github.com/kyopark2014/generative-ai-for-text/assets/52392004/ca6ea655-af88-4de5-9c37-b807db6c12da)
+
 
 #### 프로세스 단계
 
