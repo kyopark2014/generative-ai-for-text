@@ -73,6 +73,10 @@ Prompt: cheese =>
 
 ### RAG
 
+사전 
+사전 훈련된 
+
+
 hallucination을 막을 수 있음
 
 ### Lab 3: RAG on SageMaker: Embedding/In-context Q&A/Knowledge Augmentation
