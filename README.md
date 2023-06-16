@@ -117,6 +117,16 @@ LLM의 문장이 긴 경우에 Chunk단위로 요약해서 사용할때 편리�
 
 ### FLAN-T와 AI21의 비교
 
+[Flan-t5-xxl](https://github.com/kyopark2014/generative-ai-for-text/blob/main/notebook/01-question_answering_jumpstart_ai21-apigateway.ipynb)의 경우에 Hallucination 질문에 대하여 아래와 같이 
+
+아래와 같은 답이 없는 context로 제공하고 에펠탑의 높이를 물어보는 질문(What is the height of the Eiffel tower?)을 합니다.
+
+```text
+partial_context = "Its base is square, measuring 125 metres (410 ft) on each side. During its construction, the Eiffel Tower surpassed the Washington Monument to become the tallest human-made structure in the world, a title it held for 41 years until the Chrysler Building in New York City was finished in 1930. It was the first structure in the world to surpass both the 200-metre and 300-metre mark in height. Due to the addition of a broadcasting aerial at the top of the tower in 1957, it is now taller than the Chrysler Building by 5.2 metres (17 ft). Excluding transmitters, the Eiffel Tower is the second tallest free-standing structure in France after the Millau Viaduct."
+```
+
+이때의 결과로, Flan-t5-xxl은 "202.5 metres"로 잘못된 대답을 하지만 AI21 모델의 경우에 "Answer not in document"로 답변을 하고 있습니다. 
+
 ## Reference 
 
 [sagemaker-jumpstart-generative-ai-examples](https://github.com/sunbc0120/sagemaker-jumpstart-generative-ai-examples)
