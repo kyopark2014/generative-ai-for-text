@@ -111,6 +111,11 @@ LLM의 문장이 긴 경우에 Chunk단위로 요약해서 사용할때 편리�
 
 "08-RAG-based-question-answering/02-question_answering_langchain_jumpstart.ipynb"을 참조하여 [02-question_answering_langchain_jumpstart.ipynb](https://github.com/sunbc0120/sagemaker-jumpstart-generative-ai-examples/blob/main/08-RAG-based-question-answering/02-question_answering_langchain_jumpstart.ipynb)와 같이 실행하였습니다.
 
+## Hallucination
+
+### Hallucination(거짓정보) 설명
+
+### FLAN-T와 AI21의 비교
 
 ## Reference 
 
