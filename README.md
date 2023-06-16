@@ -113,7 +113,7 @@ LLM의 문장이 긴 경우에 Chunk단위로 요약해서 사용할때 편리�
 
 ## Hallucination
 
-### Hallucination(거짓정보) 설명
+Hallucination은 환각 또는 거짓정보로 번역되는데, LLM 모델에 학습되지 않은 내용을 물어보거나, 잘못된 context와 함께 질문하는 방식으로 믿을 수 없거나(unfaithful) 터무니 없는(non-sensical) 텍스트를 생성하는 현상을 말합니다. 이것은 유창하고 자연스러워 보여서 그렇듯하게 보여지므로, 사용자에게 잘못된 정보를 전달할 수 있습니다.
 
 ### FLAN-T와 AI21의 비교
 
@@ -126,6 +126,8 @@ partial_context = "Its base is square, measuring 125 metres (410 ft) on each sid
 ```
 
 이때의 결과로, Flan-t5-xxl은 "202.5 metres"로 잘못된 대답을 하지만 AI21 모델의 경우에 "Answer not in document"로 답변을 하고 있습니다. 
+
+
 
 ## Reference 
 
