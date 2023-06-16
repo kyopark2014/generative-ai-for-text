@@ -26,7 +26,28 @@ git clone https://github.com/sunbc0120/sagemaker-jumpstart-generative-ai-example
 
 ### In-context learning
 
+LLM의 파라메터 숫자를 무작정 늘리는것은 메모리와 훈련시간의 한계가 있으므로, 적당한 크기의 LLM 모델에 Fine tuning을 하는것이 좋은 선택일 수 있습니다. Fine tuning은 모델의 Weight를 변경하므로써 좀 더 바람직한 결과를 얻을 수 있지만, 이것 또한 많은 비용이 필요합니다. In-context learning은 모델의 Weight를 변경하지 않으면서, 모델의 성능을 향상 시킬수 있는 방법입니다. 이것은 다음 단어를 예측할때 도움이 되는 Context를 제공하는 방법입니다.
 
+#### Zero-shat
+
+모델이 주어진 자연어 설명(natual language description)만을 이용하여 예측을 수행합니다. 즉, 예시없이 질문만하는 경우입니다. 
+
+```text
+Task description: "Translate English to French: "
+Prompt: cheese ==>
+```
+
+```text
+prompt: "Translate to German:  My name is Arthur"
+Response: Ich bin Arthur.
+```
+
+#### One-shat
+
+모델에 하나의 예시를 주고 예측을 수행합니다. 
+
+prompt = "Translate to German:  My name is Arthur"
+Response: Ich bin Arthur.
 
 
 ## LLM의 성능을 향상시키는 방법
