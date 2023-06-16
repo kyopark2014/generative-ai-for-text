@@ -121,7 +121,7 @@ Hallucination은 환각 또는 거짓정보로 번역되는데, LLM 모델에 �
 
 아래와 같은 답이 없는 context로 제공하고 에펠탑의 높이를 물어보는 질문(What is the height of the Eiffel tower?)을 합니다.
 
-```java
+```text
 partial_context = "Its base is square, measuring 125 metres (410 ft) on each side. During its construction, the Eiffel Tower surpassed the Washington Monument to become the tallest human-made structure in the world, a title it held for 41 years until the Chrysler Building in New York City was finished in 1930. It was the first structure in the world to surpass both the 200-metre and 300-metre mark in height. Due to the addition of a broadcasting aerial at the top of the tower in 1957, it is now taller than the Chrysler Building by 5.2 metres (17 ft). Excluding transmitters, the Eiffel Tower is the second tallest free-standing structure in France after the Millau Viaduct."
 ```
 
