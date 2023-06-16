@@ -33,8 +33,8 @@ LLM의 파라메터 숫자를 무작정 늘리는것은 메모리와 훈련시�
 모델이 주어진 자연어 설명(natual language description)만을 이용하여 예측을 수행합니다. 즉, 예시없이 질문만하는 경우입니다. 
 
 ```text
-Task description: "Translate English to French: "
-Prompt: cheese ==>
+Task description: Translate English to French:
+Prompt: cheese =>
 ```
 
 ```text
@@ -46,8 +46,23 @@ Response: Ich bin Arthur.
 
 모델에 하나의 예시를 주고 예측을 수행합니다. 
 
-prompt = "Translate to German:  My name is Arthur"
-Response: Ich bin Arthur.
+```text
+Test description: Translate English to French:
+Example: sea otter => loutre de mer
+Prompt: cheese =>
+```
+
+#### Few-shot
+
+여러개의 예시를 주고 예측을 수행합니다.
+
+```text
+Test description: Translate English to French:
+Example: sea otter => loutre de mer
+Example: peppermint => menthe poivree
+Example: plus girafe => girafe peluche
+Prompt: cheese =>
+```
 
 
 ## LLM의 성능을 향상시키는 방법
