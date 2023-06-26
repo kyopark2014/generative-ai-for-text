@@ -32,7 +32,7 @@ LLM의 파라메터 숫자를 무작정 늘리는것은 메모리와 훈련시�
 
 - Prior에 더 많은 정보가 추가되기 때문에 목적에 맞는 Posterior를 만들어주는것 (대열님)
 
-#### Zero-shat
+#### Zero-shot
 
 모델이 주어진 자연어 설명(natual language description)만을 이용하여 예측을 수행합니다. 즉, 예시없이 질문만하는 경우입니다.
 
@@ -48,7 +48,7 @@ prompt: "Translate to German:  My name is Arthur"
 Response: Ich bin Arthur.
 ```
 
-#### One-shat
+#### One-shot
 
 모델에 하나의 예시를 주고 예측을 수행합니다. 
 
