@@ -144,3 +144,5 @@ partial_context = "Its base is square, measuring 125 metres (410 ft) on each sid
 [LLM Instruction Tuning on SageMaker](https://github.com/aws-samples/aws-ml-jp/blob/main/tasks/generative-ai/text-to-text/fine-tuning/instruction-tuning/README_en.md)
 
 [Introducing the Hugging Face LLM Inference Container for Amazon SageMaker](https://huggingface.co/blog/sagemaker-huggingface-llm)
+
+[RAG-ing Success: Guide to choose the right components for your RAG solution on AWS](https://medium.com/@pandey.vikesh/rag-ing-success-guide-to-choose-the-right-components-for-your-rag-solution-on-aws-223b9d4c7280)
