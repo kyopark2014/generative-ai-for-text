@@ -146,3 +146,6 @@ partial_context = "Its base is square, measuring 125 metres (410 ft) on each sid
 [Introducing the Hugging Face LLM Inference Container for Amazon SageMaker](https://huggingface.co/blog/sagemaker-huggingface-llm)
 
 [RAG-ing Success: Guide to choose the right components for your RAG solution on AWS](https://medium.com/@pandey.vikesh/rag-ing-success-guide-to-choose-the-right-components-for-your-rag-solution-on-aws-223b9d4c7280)
+
+[Amazon OpenSearch Service’s vector database capabilities explained](https://aws.amazon.com/ko/blogs/big-data/amazon-opensearch-services-vector-database-capabilities-explained/)
+
