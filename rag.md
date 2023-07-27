@@ -16,7 +16,7 @@
 
 [Amazon Kendra, LangChain 및 대규모 언어 모델(LLM)을 사용하여 엔터프라이즈 데이터에서 높은 정확도의 생성형 AI 애플리케이션을 빠르게 구축하기](https://aws.amazon.com/ko/blogs/tech/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/)와 같이 Kendra를 이용하여 symentic search를 구현하고 이를 이용해 RAG를 적용할 수 있습니다.
 
-![image](https://github.com/kyopark2014/generative-ai-for-text/assets/52392004/0d19d127-16b8-4c4d-a906-bba7c301a595)
+<img src="https://github.com/kyopark2014/generative-ai-for-text/assets/52392004/0d19d127-16b8-4c4d-a906-bba7c301a595" width="500">
 
 
 #### 프로세스 단계
