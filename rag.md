@@ -8,8 +8,7 @@
 
 [Build a powerful question answering bot with Amazon SageMaker, Amazon OpenSearch Service, Streamlit, and LangChai](https://aws.amazon.com/ko/blogs/machine-learning/build-a-powerful-question-answering-bot-with-amazon-sagemaker-amazon-opensearch-service-streamlit-and-langchain/?sc_channel=sm&sc_campaign=Machine_Learning&sc_publisher=LINKEDIN&sc_geo=GLOBAL&sc_outcome=awareness&trk=machine_learning&linkId=219734484)의 아래 그림을 참조합니다.
 
-
-![image](https://github.com/kyopark2014/generative-ai-for-text/assets/52392004/ca6ea655-af88-4de5-9c37-b807db6c12da)
+<img src="https://github.com/kyopark2014/generative-ai-for-text/assets/52392004/ca6ea655-af88-4de5-9c37-b807db6c12da" width="700">
 
 
 #### 프로세스 단계
