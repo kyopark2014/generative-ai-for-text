@@ -6,9 +6,17 @@
 - Knowledge DB에서 Prompt에 맞는 검색 결과에 대한 임베딩을 뽑아서 Prompt에 추가하여 넣어주는 방식입니다. 따라서 양질의 DB 구축이 중요합니다. (dk님)
 - RAG는 모델을 개선하는 것은 아니고, Prior를 더욱 좋게 만들어주는 것이라 보면 될 것 같습니다. 그렇기 때문에 좋은 맥락을 만들어주는 Retriever의 역할이 중요합니다. 더 좋은 결과를 내기 위해서는 후보맥락을 뽑아주는 Retriever를 잘 만드는 것이 중요하고 많은 연구가 이뤄지고 있습니다. 예를들어 LLM의 오류를 Retriever에 Loss값으로 전파해서 Retriever 네트워크만 추가학습하는 기법도 있습니다. (dy님)
 
+## OpenSearch 이용하여 구현시
+
 [Build a powerful question answering bot with Amazon SageMaker, Amazon OpenSearch Service, Streamlit, and LangChai](https://aws.amazon.com/ko/blogs/machine-learning/build-a-powerful-question-answering-bot-with-amazon-sagemaker-amazon-opensearch-service-streamlit-and-langchain/?sc_channel=sm&sc_campaign=Machine_Learning&sc_publisher=LINKEDIN&sc_geo=GLOBAL&sc_outcome=awareness&trk=machine_learning&linkId=219734484)의 아래 그림을 참조합니다.
 
 <img src="https://github.com/kyopark2014/generative-ai-for-text/assets/52392004/ca6ea655-af88-4de5-9c37-b807db6c12da" width="700">
+
+## Kendra를 이용하여 구현시
+
+[Amazon Kendra, LangChain 및 대규모 언어 모델(LLM)을 사용하여 엔터프라이즈 데이터에서 높은 정확도의 생성형 AI 애플리케이션을 빠르게 구축하기](https://aws.amazon.com/ko/blogs/tech/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/)와 같이 Kendra를 이용하여 symentic search를 구현하고 이를 이용해 RAG를 적용할 수 있습니다.
+
+![image](https://github.com/kyopark2014/generative-ai-for-text/assets/52392004/0d19d127-16b8-4c4d-a906-bba7c301a595)
 
 
 #### 프로세스 단계
