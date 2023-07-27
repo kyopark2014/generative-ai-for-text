@@ -2,6 +2,23 @@
 
 Generative AI에서는 레이블(Label)이 안된 다양한 데이터로 Pretrain을 수행한 Foundation Model을 이용하여, Text generation, Summarization, Inofomation Extraction, Q&A, Chatbot에 활용할 수 있습니다. 이를 통해 서비스와 인프라를 쉽게 이용하고, 효율적으로 비용을 관리하고, 공통적인 비지니스 작업(Task)에 빠르게 적용할 수 있습니다. 
 
+## Tasks
+
+Prompt를 이용한 Task에는 아래와 같은것들이 있습니다. 
+
+* Task based prompting
+NLP encompasses a diverse range of tasks like summarization, rewriting, information extraction, question answering, classification, conversation, translation, reasoning and code generation. These tasks power applications such as virtual assistants, chatbots, information retrieval systems, and more. NLP allows software systems to analyze, interpret and respond to human language data at scale.
+1) Text Summarization: Producing a shorter version of a piece of text while retaining the main ideas. Examples are summarizing news articles, text documents or reports into single paragraphs.
+2) Rewriting: Convert the input text into a different wording. For example: convert a document with legal jargon to a plain english document, rewrite an email in different tones (formal, informal), structured table to paragraph. Used by departments such as marketing, sales or legal.
+3) Information Extraction: Identifying and extracting specific pieces of information from text. For example, extracting names of people, locations, events or numbers from documents. Used for tasks like sales lead generation or resume parsing.
+4) Question Answering: Using text or structured data to determine the answer to a question. For example, answering queries about movies, books or general knowledge. Useful for virtual assistants and help desk automation.
+5) Text Classification: Assigning a label or category to a piece of text based on its contents. For example, detecting language, spam detection, sentiment analysis or tagging support tickets with relevant categories.
+6) Conversation: Ability to have coherent multi-turn dialogue with humans to accomplish tasks like customer service, tech support or general conversations. Examples are chatbots, dialogue agents and conversational interfaces.
+7) Translation: Changing input in source language to a target language. For example, English to German, slang to literary.
+8) Reasoning: Using language to logically draw new conclusions, inferences or predictions that are not explicitly stated in the original text or data. For example, analyzing statements about objects, people and events to anticipate what otherwise unstated inferences can be drawn by filling in missing details.
+9) Code Generation: Producing software code based on a natural language description or in response to changes in a end user interface. For example, generating HTML markup or syntax in a specific programming language.
+
+
 
 
 
