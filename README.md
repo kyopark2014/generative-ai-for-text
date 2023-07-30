@@ -95,6 +95,8 @@ Prompt: cheese =>
 
 [RAG](https://github.com/kyopark2014/generative-ai-for-text/blob/main/rag.md)에서 Hallucination을 방지하고 LLM의 성능을 향상시킬수 있는 RAG에 대해 설명합니다.
 
+vector store를 사용하면 대규모 언어 모델의 token 사이즈를 넘어서는 긴 문장을 활용하여 질문/답변(Question/Answering)과 같은 Task를 수행할 수 있으며 환각(hallucination) 영향을 줄일 수 있습니다.
+
 ### Faiss
 
 [Faiss](https://github.com/facebookresearch/faiss)는 Facebook에서 오픈소스로 제공하는 In-memory vector store로서 embedding과 document들을 저장할 수 있으며, LangChain을 지원합니다. 비슷한 역할을 하는 persistent store로는 Amazon OpenSearch, RDS Postgres with pgVector, ChromaDB, Pinecone과 Weaviate가 있습니다. 
