@@ -2,6 +2,36 @@
 
 Generative AI에서는 레이블(Label)이 안된 다양한 데이터로 Pretrain을 수행한 Foundation Model을 이용하여, Text generation, Summarization, Inofomation Extraction, Q&A, Chatbot에 활용할 수 있습니다. 이를 통해 서비스와 인프라를 쉽게 이용하고, 효율적으로 비용을 관리하고, 공통적인 비지니스 작업(Task)에 빠르게 적용할 수 있습니다. 
 
+## Projects
+
+### Bedrock과 Vector Store를 이용한 Question/Answering Chatbot 
+
+[question-answering-chatbot-with-vector-store](https://github.com/kyopark2014/question-answering-chatbot-with-vector-store)은 질문/답변(Question/Answering)을 수행하는 Chatbot을 vector store를 이용하여 RAG를 통해 구현합니다. Vector store로는 In-memory 방식의 Faiss와 persistent store인 OpenSearch를 이용합니다. 
+
+접속주소는 https://d1jlvc7achaanj.cloudfront.net/chat.html 입니다.
+
+### Bedrock과 Kendra를 이용한 Question/Answering Chatbot
+
+[question-answering-chatbot-with-kendra](https://github.com/kyopark2014/question-answering-chatbot-with-kendra)에서는 질문/답변(Question/Answering)을 수행하는 Chatbot을 Kendra를 이용한 RAG로 구현합니다. Seoul Region은 Kendra가 아직 GA되지 않았으므로, Tokyo Region을 이용합니다. 
+
+접속주소는 https://dgwydtu6r7hxf.cloudfront.net/chat.html 입니다.
+
+### Llama 2와 Vector Store를 이용한 Question/Answering Chatbot
+
+[Llama2-chatbot-with-vector-store](https://github.com/kyopark2014/Llama2-chatbot-with-vector-store)에서는 질문/답변(Question/Asnwering)을 수행하는 Chatbot을 Llama 2와 vector store를 이용하여 구현합니다. Llama 2는 N.Virginia (us-east-1)에 SageMaker JumpStart를 이용해 설치가 되고, SageMaker Endpoint를 LangChain으로 연결하여 Chatbot을 구현합니다. Vector store로 Faiss와 OpenSearch를 선택적으로 사용할 수 있습니다.
+
+접속주소는 https://d36e8hz1qn2mjd.cloudfront.net/chat.html 입니다.
+
+### Llama 2와 Kendra를 이용한 Question/Answering Chatbot
+
+[Llama2-chatbot-with-kendra](https://github.com/kyopark2014/Llama2-chatbot-with-kendra)에서는 질문/답변(Question/Asnwering)을 수행하는 Chatbot을 Llama 2와 Kendra를 이용하여 구현합니다. 현재 Llama 2를 사용할때 Kendra를 LangChain을 연결하는 부분에서 문제가 있어서 기능 테스트중입니다.
+
+### Bedrock을 위한 Basic Question/Answering Chatbot
+
+[simple-chatbot-using-LLM-based-on-amazon-bedrock](https://github.com/kyopark2014/simple-chatbot-using-LLM-based-on-amazon-bedrock)에서는 Bedrock을 이용해 간단한 chatbot과 파일에 대한 Summarization을 구현합니다. Bedrock 인터페이스 및 기본 동작을 설명하기 위한 용도로 RAG는 포함되어 있지 않습니다.
+
+
+
 ## Tasks
 
 Prompt를 이용한 Task에는 아래와 같은것들이 있습니다. 
